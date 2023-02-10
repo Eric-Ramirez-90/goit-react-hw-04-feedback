@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { List, Item } from './Statistics.styled';
 
-export function Statistics({ good, neutral, bad, total, positivePercentage }) {
+function Statistics({ good, neutral, bad, total, positivePercentage }) {
   return (
     <>
       {total && (
@@ -26,3 +26,5 @@ Statistics.propTypes = {
   total: PropTypes.number.isRequired,
   positivePercentage: PropTypes.number.isRequired,
 };
+
+export default Statistics;

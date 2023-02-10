@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { Wrapper, Button } from './FeedbackOptions.styled';
 
-export function FeedbackOptions({ options, onLeaveFeedback }) {
+function FeedbackOptions({ options, onLeaveFeedback }) {
   return (
     <Wrapper>
       {options.map(option => {
@@ -23,3 +23,5 @@ FeedbackOptions.propTypes = {
   options: PropTypes.arrayOf(PropTypes.string.isRequired),
   onLeaveFeedback: PropTypes.func.isRequired,
 };
+
+export default FeedbackOptions;
